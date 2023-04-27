@@ -1,0 +1,5 @@
+{
+  "settings" : {
+    "electionTimeoutMillis" : 5000
+  }
+}

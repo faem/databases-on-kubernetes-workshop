@@ -1,0 +1,13 @@
+apiVersion: stash.appscode.com/v1alpha1
+kind: Repository
+metadata:
+  name: repo
+  namespace: demo
+spec:
+  backend:
+    s3:
+      endpoint: http://minio.minio.svc.cluster.local:9000
+      bucket: mongo
+      region: us-southeast-1
+      prefix: /mg-test
+    storageSecretName: storage
